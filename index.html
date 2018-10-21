@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <title>Restaurang Kina Malmö</title>
+</head>
+
+<body>
+    <section>
+    <header id="header">
+        <i id="corner-icon" class="fas fa-bars menu-button" onclick="menuButtonClicked()"> </i>
+
+       
+        <a href="index.html">
+            <img class="chopsticks-logo" src="/images/chopsticks-logo.png">
+        </a>
+       <a href="index.html"><h3 class="title">Restaurang Kina, Malmö</h3></a>
+        <ul>
+            <li><a class="active" href="index.html">Välkommen</a></li>
+            <li><a href="#meny">Vår Meny</a></li>
+            <li><a href="#kontakt">Boka bord</a></li>
+            <li><a href="#kontakt">Kontakta oss</a></li>
+            <li><a href="#kontakt">Hemkörning</a></li>
+        </ul>
+    </header>
+
+
+    <div class="page-content-bg">
+        <div class="page-content-text">
+            <h1 class="page-content-big-text">Maten</h1>
+            <p class="small-text">som man längtar efter</p>
+           <!--  <button class="button-offers">Buffé</button>
+            <button class="button-offers">Servering</button>
+            <button class="button-offers">Avhämtning</button>
+            <button class="button-offers">Hemkörning</button> -->
+            <div class="arrow bounce">
+                    <a onscroll="testScroll()" id="scroll" class="fas fa-angle-down fa-3x" href="#deals"></a>
+                </div>
+        </div>
+       
+    </div>
+    <div class="good-deals" id="deals">
+        <div class="servering">
+            <h1>Servering</h1>
+            <i class="fas fa-utensils"></i>
+        </div>
+        <div class="buffe">
+                <h1>Buffé</h1>
+                <i class="fas fa-check"></i>
+            </div>
+        <div class="takeaway">
+            <h1>Avhämtning</h1>
+            <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="hemleverans">
+            <h1>Hemleverans</h1>
+            <i class="fas fa-car"></i>
+        </div>
+    </div>
+   
+    <div class="phone-number">
+        <h1>Beställ via telefon <a href="tel:040188414">040-18 84 14.</a></h1>
+    </div>
+<main>
+            <h1 class="erbjudanden"><span>Populära Erbjudanden</span></h1>
+            <div class="hot-offers">
+            <div class="offer-span-one">
+                <h2>Lunchbuffé</h2>
+                <p>Saft, vatten, jasmin te, kaffe, kakor och salladsbuffé ingår</p>
+                <p>Mån-fre ca 11:00-14:30 </p>
+                <p>(obs stängt på tisdagar)</p>
+               <p>Servering 99:-</p>
+               <p>Avhämtning 89:-</p>
+               
+            </div>
+            <div class="offer-span-two">
+                    <h2>Helgbuffé</h2>
+                    <p>Saft, vatten, jasmin te, kaffe, kakor och salladsbuffé ingår</p>
+                    <p>Fredag ca 16:00-19:30</p>
+                    <p>Servering & Avhämtning 129:-</p>
+                    <p>Lördag & söndag ca 12:00-19:30</p>
+                    <p>Servering & Avhämtning 149:-</p>
+        
+                </div>
+                
+    </div>
+</main>
+    <footer id="footer">
+        <div class="footer-contact">
+            <div class="footer-contact-wrapper">
+           <a href="tel:040188414"><i class="fas fa-phone"></i>&nbsp; 040-18 84 14</a>
+            </div>
+            <div class="footer-contact-wrapper">
+            <a href="https://www.google.com/maps/search/?api=1&query=drottninggatan+4a+malmö" target="_blank"><i class="fas fa-map-marker-alt"></i>&nbsp;Drottninggatan 4A, 212 31 Malmö</a>
+            </div>
+        </div>
+        <div class="footer-social">
+                <a href="https://www.facebook.com/restaurangkina/" class="fab fa-facebook-f"></a>
+            </div>
+            <div class="footer-links">
+                    <li><a href="#">Vår Meny &nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Boka bord &nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Kontakt & Hitta hit &nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Hemkörning &nbsp;&nbsp;&nbsp;></a></li>
+            </div>
+        <div class="copyright">
+        <p>&#169; 2018 All Rights Reserved </p>
+        <p>Site By: David Yan</p>
+    </div>
+    </footer>
+</section>
+</body>
+
+</html>

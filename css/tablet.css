@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+    section{
+        width: 80%;
+        margin-left: 20%;
+    }
+
+
+    .page-content-bg{
+        height: 50em;
+    }
+
+    footer .footer-contact-wrapper a{
+        text-decoration: none;
+       
+    }
+}
