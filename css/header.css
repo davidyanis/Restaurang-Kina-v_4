@@ -5,6 +5,7 @@ header{
     overflow: hidden;
     transition: height 0.5s 0ms;
     z-index: 1000;
+    border-right: 1px solid #333;
     }
     
     header li a{
