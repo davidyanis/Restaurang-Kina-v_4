@@ -1,11 +1,10 @@
 header{
     width: 100%;
     height: 4em;
-    background-color: #0d0d0d;
+    background-color: rgba(0, 0, 0);
     overflow: hidden;
     transition: height 0.5s 0ms;
     z-index: 1000;
-    border-right: 1px solid #333;
     }
     
     header li a{
@@ -16,7 +15,7 @@ header{
         display: block;
         text-decoration: none;
         color: #ddd;
-        font-size: 1.5em;
+        font-size: 2em;
         white-space: nowrap;
         font-weight: 100;
         font-family: 'Roboto', sans-serif;
@@ -38,31 +37,30 @@ header{
         color: #A72B24;
     }
     .title{
-        font-size: 1.5em;
+        font-size: 2em;
         text-decoration: none;
         display: inline-block;
         color: #A77A48;
         font-family: 'Rancho', cursive;
        font-weight: 100;
-       margin: 0.7em;
-       margin-left: 0;
+        margin: 0;
+        padding-left: 0.6em;
+        padding-top: 0.4em;
+
+    }
+
+    .title span {
+        display: none;
     }
     
     header .menu-button{
-        padding: 0.7em;
-        font-size: 1.5em;
+        padding: 0.6em;
+        font-size: 2em;
         float: right;
         margin: 0;
         color: #ddd;
     }
-    header .chopsticks-logo{
-        width: 6em;
-        height: 3em;
-        padding: 0;
-        margin-top: 0.3em;
-        float: left;
-    }
-    
+
     header.fullscreen{
         height: 100vh;
     }
@@ -80,23 +78,20 @@ header{
             
         }
     
-        header .chopsticks-logo{
-            width: 100%;
-            height: 10em;
-            margin: 0 auto;
-            margin-top: 2em !important;
-        }
         .title{
            text-align: center;
            width: 100%;
-           margin: 0;
            font-size: 2em;
-           
+           margin-top: 2em;
             
         }
     
         header .menu-button{
             display: none;
+        }
+
+        .title span {
+            display: initial;
         }
 
     

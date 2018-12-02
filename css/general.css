@@ -27,8 +27,8 @@ main {
 .page-content-text {
 display: flex;
 flex-direction: column;
-justify-content: center;
-height: 100%;
+
+height: 25em;
 line-height: 1.4em;
 width: 100%;
 text-shadow: 2px 2px #000;
@@ -37,23 +37,24 @@ font-family: 'Roboto', sans-serif;
 }
 
 .page-content-big-text{
-    margin: 0;
+    margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: 500;
     color: white;
+    transition: all .5s linear;
    
 }
 
 
 .small-text{
-    font-size: 1.1em;
+    font-size: 1.8em;
     font-weight: 100;
    display: none;
     color: white;
     text-transform: lowercase;
-    margin: 0;
-   
+    margin-top: 0.5em;
+    transition: all .5s linear;
 
 }
 
@@ -64,6 +65,10 @@ font-family: 'Roboto', sans-serif;
     padding: 0.5em;
   width: 5em;
   text-align: center;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
 }
 
 .arrow {
@@ -82,7 +87,7 @@ font-family: 'Roboto', sans-serif;
 .fa-bolt {
     width: 100%;
     text-align: center;
-    color: #A72B24;
+    color: #cc0000;
 }
 
 .hot-offers{
@@ -93,26 +98,40 @@ font-family: 'Roboto', sans-serif;
 }
 
 .offer-span-one, .offer-span-two {
+    height: 30em;
+margin-top: 1em;
     flex-grow: 1;
     display: flex;
     border: 1px solid #ddd;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     flex-direction: column;  
+    justify-content: center;
     align-items: center;
-    margin: 1em;
 } 
 
+.offer-span-one h2, .offer-span-two h2 {
+    color: #cc0000;
+    font-size: 2em;
+}
+.offer-span-one p, .offer-span-two p {
+    font-size: 1.4em;
+    margin: 0;
+}
+
 .buffe-includes {
-    color: #A72B24;
+   margin: 1em;
+    
 }
 
 .erbjudanden {
     line-height: 0.2em;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 3em;
     font-weight: 500;
     font-family: 'Rancho', cursive;
+    color: #cc0000;
   }
+
   
   
 .menu-button-parent {
@@ -120,12 +139,12 @@ font-family: 'Roboto', sans-serif;
     margin-top: 3em;
 }
 .go-to-menu {
-   
-    color: #A72B24;
+    color: white;
+    background-color: #cc0000;
     text-decoration: none;
     font-size: 1.5em;
     padding: 0.5em;
-    border: 1px solid #A72B24;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     text-align: center;
     border-radius: 0.5em;
     -webkit-transition-duration: 1s;
@@ -133,50 +152,75 @@ font-family: 'Roboto', sans-serif;
          -o-transition-duration: 1s;
             transition-duration: 1s;
 }
-.go-to-menu:hover {
-    color: white;
-    background-color: #A72B24;
-}
+.go-to-menu span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .go-to-menu span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .go-to-menu:hover span {
+    padding-right: 25px;
+  }
+  
+  .go-to-menu:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 
 /* Call to order */
 .phone-number{
-    background: linear-gradient( rgba(219, 2, 2, 0.8), rgba(83, 17, 17, 0.8) ), url("/../assets/behind-phone.jpg");
+    background: linear-gradient( rgba(219, 2, 2, 0.1), rgba(83, 17, 17, 0.1) ), url("/../assets/behind-phone.jpg");
     height: 10em;
    display: flex;
    justify-content: center;
-   margin-top: 2em;
+   margin-top: 5em;
 
    
 }
 .phone-number h1{
-    font-size: 1.9em;
+    font-size: 2.4em;
     font-weight: 500;
-    border: 3px solid black;
-   height: 3em;
-   text-align: center;
-   display: flex;
-   flex-wrap: wrap;
-   width: 16em;
-   align-items: center;
-   justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 0.4em;
+    padding-right: 0.4em;
  
 }
 .phone-number a {
-    color: white;
+    color: #cc0000;
     text-decoration: none;
     font-weight: 700;
+    
 }
 
 .phone-number a:hover {
-   opacity: 0.5;
+    opacity: 0.5;
 }
+
+
 
 /* Contact wrapper */
 
 .homepage-contact-info {
     flex-wrap: wrap;
     display: flex;
-    margin-top: 1em;
+    margin-top: 5em;
 }
 .open-hours {
     background-color: #f2f2f2;
@@ -185,68 +229,68 @@ font-family: 'Roboto', sans-serif;
     padding-left: 2em;
     font-size: 1.4em;
 }
-.find-us {
-    text-align: center;
-}
 .google-maps {
-    flex-grow: 2;
+    flex-grow: 1;
 }
-.about-us {
+.about-us-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1em;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9) ), url("/../assets/aboutUs.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
-.about-us p{
-   width: 70%;
-   border: 1px solid red;
+.about-us-text{
+   background-color: #fff;
+   width: 100%;
+   
+   padding: 1em;
+   font-size: 1.4em;
 }
-.about-us img{
-    border: 1px solid red;
-    border-radius: 10em;
-    width: 20em;
+.about-us-text h1{
+color: #cc0000;
 }
-
 /* FOOTER */
-
 footer {
+    margin-top: 10em;
     background-color: #1a1a1a;
     color:#b3b3b3;
     height: 70%;
     width: 100%;
     overflow: hidden;
-    padding-top: 2em;
+    
 }
 .footer-contact {
     display: flex;
     justify-content: center;
 }
-    
-
 .footer-contact-wrapper{
     margin-top: 1em;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.3em;
-   
+   display: flex;
+   flex-direction: column;
     width: auto;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .footer-contact-wrapper a{
     font-family: 'Source Sans Pro', sans-serif;
     color: #b3b3b3;
     margin-top: 1em;
-    
-   
 }
 .copyright{
     text-align: center;
     width: 100%;
     border-top: 1px solid #333;
     background-color: #0d0d0d;
-    height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
-
-
 footer .footer-links{
     display: flex;
     flex-wrap: wrap;
@@ -255,25 +299,20 @@ footer .footer-links{
     justify-content: center;
     margin-top: 1em;
 }
-
 footer .footer-links li a{
     color: #b3b3b3;
     line-height: 2em;
     text-decoration: none;
     padding-left: 1em;
-   
 }
-
 footer .footer-links li a:hover{
-   color:  #A72B24;
+   color:  #cc0000;
    
 }
-
 .fa-map-marker-alt, .fa-phone{
-    color: #A72B24;
+    color: #cc0000;
     margin-right: 0.5em;
 }
-
 .fa-facebook-f{
     background-color: #3B5998;
     color: white;
@@ -282,13 +321,10 @@ footer .footer-links li a:hover{
     text-align: center;
     text-decoration: none;
     list-style-type: none;
-    font-family: font
 }
-
 .fa-facebook-f:hover{
-    background-color: #A72B24;
+    background-color: #cc0000;
 }
-
 /* Bouncing arrow */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {

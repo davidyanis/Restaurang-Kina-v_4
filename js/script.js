@@ -32,5 +32,33 @@ function menuButtonClicked() {
 }
 window.onscroll=testScroll
 
+/* // When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 190 || document.documentElement.scrollTop > 190) {
+      document.getElementById("smaller").style.fontSize = "2em";
+    } else {
+        document.getElementById("smaller").style.fontSize = "4em";
+    }
+}
+ */
+
+$(function(){
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+      var os = $('#page-content-text').offset().top; // pixels to the top of div1
+      var ht = $('#smaller').height(); // height of div1 in pixels
+      // if you've scrolled further than the top of div1 plus it's height
+      // change the color. either by adding a class or setting a css property
+      if(scroll > os + ht){
+          $('#smaller').css("font-size", "2em");
+          $('#smaller-text').css("font-size", "1em");
+      } else {
+        $('#smaller').css("font-size", "4em");
+        $('#smaller-text').css("font-size", "1.8em");
+      }
+  });
+});
 
 
