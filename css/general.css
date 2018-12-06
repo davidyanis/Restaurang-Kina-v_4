@@ -15,25 +15,23 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 92vh;
     color: #ddd;
-    display: flex;
     width: 100%;
-    justify-content: flex-end;
-    flex-direction: column;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .page-content-text {
-display: flex;
-flex-direction: column;
-
-height: 25em;
 line-height: 1.4em;
 width: 100%;
 text-shadow: 2px 2px #000;
-align-items: center;
 font-family: 'Roboto', sans-serif;
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
 .page-content-big-text{
@@ -43,7 +41,7 @@ font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: white;
     transition: all .5s linear;
-   
+
 }
 
 
@@ -55,7 +53,6 @@ font-family: 'Roboto', sans-serif;
     text-transform: lowercase;
     margin-top: 0.5em;
     transition: all .5s linear;
-
 }
 
 
@@ -63,32 +60,25 @@ font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #ddd;
     padding: 0.5em;
-  width: 5em;
-  text-align: center;
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -ms-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
+    width: 5em;
+    text-align: center;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
 }
 
-.arrow {
-    display: flex;
-    justify-content: center;
-}
 .fa-angle-down:hover{
    opacity: 0.2;
 }
 .bounce {
+    display: flex;
+    justify-content: center;
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
 
-.fa-bolt {
-    width: 100%;
-    text-align: center;
-    color: #cc0000;
-}
 
 .hot-offers{
     height: 100%;
@@ -98,7 +88,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .offer-span-one, .offer-span-two {
-    height: 30em;
+    height: 20em;
 margin-top: 1em;
     flex-grow: 1;
     display: flex;
@@ -107,26 +97,30 @@ margin-top: 1em;
     flex-direction: column;  
     justify-content: center;
     align-items: center;
+    text-align: center;
 } 
 
 .offer-span-one h2, .offer-span-two h2 {
     color: #cc0000;
     font-size: 2em;
+   
 }
 .offer-span-one p, .offer-span-two p {
-    font-size: 1.4em;
+    font-size: 1.1em;
     margin: 0;
+   
 }
 
 .buffe-includes {
    margin: 1em;
+   text-align: center
     
 }
 
 .erbjudanden {
     line-height: 0.2em;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.4em;
     font-weight: 500;
     font-family: 'Rancho', cursive;
     color: #cc0000;
@@ -180,24 +174,22 @@ margin-top: 1em;
 
 /* Call to order */
 .phone-number{
-    background: linear-gradient( rgba(219, 2, 2, 0.1), rgba(83, 17, 17, 0.1) ), url("/../assets/behind-phone.jpg");
-    height: 10em;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("/../assets/fire.jpg");
+    height: 15em;
+    background-size: cover;
+    background-attachment: fixed;
    display: flex;
    justify-content: center;
-   margin-top: 5em;
-
-   
+   flex-direction: column;
+   margin-top: 5em; 
+  
 }
 .phone-number h1{
     font-size: 2.4em;
     font-weight: 500;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+   margin: 0;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
     padding-left: 0.4em;
     padding-right: 0.4em;
  
@@ -206,6 +198,9 @@ margin-top: 1em;
     color: #cc0000;
     text-decoration: none;
     font-weight: 700;
+    font-size: 2.4em;
+    text-align: center;
+   
     
 }
 
@@ -220,14 +215,16 @@ margin-top: 1em;
 .homepage-contact-info {
     flex-wrap: wrap;
     display: flex;
-    margin-top: 5em;
 }
 .open-hours {
     background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    flex-grow: 1;
-    padding-left: 2em;
-    font-size: 1.4em;
+    
+   width: 100%;
+   height: 23em;
+    font-size: 1.3em;
+    padding: 2em;
+
+   
 }
 .google-maps {
     flex-grow: 1;
@@ -236,22 +233,25 @@ margin-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9) ), url("/../assets/aboutUs.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6) ), url("/../assets/aboutUs.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 .about-us-text{
-   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.8);
    width: 100%;
-   
+   font-size: 1.2em;
+   text-align: center;
    padding: 1em;
-   font-size: 1.4em;
+  
 }
 .about-us-text h1{
 color: #cc0000;
+font-size: 2em;
+margin: 0;
 }
+
 /* FOOTER */
 footer {
     margin-top: 10em;
@@ -282,6 +282,7 @@ footer {
     margin-top: 1em;
 }
 .copyright{
+    font-size: 0.8em;
     text-align: center;
     width: 100%;
     border-top: 1px solid #333;
@@ -289,6 +290,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+   
+}
+.copyright p{
+    margin: 0;
    
 }
 footer .footer-links{
@@ -314,7 +321,7 @@ footer .footer-links li a:hover{
     margin-right: 0.5em;
 }
 .fa-facebook-f{
-    background-color: #3B5998;
+    background-color: #cc0000;
     color: white;
     padding: 1em;
    border-radius: 50%;

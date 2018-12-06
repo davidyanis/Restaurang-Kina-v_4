@@ -15,7 +15,7 @@ header{
         display: block;
         text-decoration: none;
         color: #ddd;
-        font-size: 2em;
+        font-size: 1.7em;
         white-space: nowrap;
         font-weight: 100;
         font-family: 'Roboto', sans-serif;
@@ -36,25 +36,25 @@ header{
     .active{
         color: #A72B24;
     }
-    .title{
-        font-size: 2em;
+    .title a{
+        font-size: 1.2em;
         text-decoration: none;
         display: inline-block;
-        color: #A77A48;
-        font-family: 'Rancho', cursive;
-       font-weight: 100;
+        color: #ddd;
+        
+       font-weight: 400;
         margin: 0;
-        padding-left: 0.6em;
-        padding-top: 0.4em;
+        padding-left: 0.5em;
 
+        
     }
 
-    .title span {
+    header img {
         display: none;
     }
     
     header .menu-button{
-        padding: 0.6em;
+        padding: 0.5em;
         font-size: 2em;
         float: right;
         margin: 0;
@@ -77,21 +77,19 @@ header{
            left:0px;   
             
         }
+
+        header img {
+            width: 100%;
+            display: initial;
+            
+        }
     
         .title{
-           text-align: center;
-           width: 100%;
-           font-size: 2em;
-           margin-top: 2em;
-            
+          display: none!important;
         }
     
         header .menu-button{
             display: none;
-        }
-
-        .title span {
-            display: initial;
         }
 
     

@@ -31,7 +31,8 @@
     <header id="header">
         <i id="corner-icon" class="fas fa-bars menu-button" onclick="menuButtonClicked()"> </i>  
         
-        <a href="index.html"><h3 class="title">Restaurang Kina, Malmö<span>大中华饭店</span></h3></a>
+        <h3 class="title"><a href="index.html">Restaurang Kina, Malmö</a></h3>
+        <a href="index.html"><img src="assets/favicon.png"></a>
         <ul>
             <li><a class="active" href="index.html">Välkommen</a></li>
             <li><a href="#meny">Vår Meny</a></li>
@@ -43,6 +44,7 @@
 
 
     <div class="page-content-bg">
+        <div></div>
         <div class="page-content-text" id="page-content-text">
             <h1 class="page-content-big-text" id="smaller">Maten</h1>
             <p class="small-text" id="smaller-text">man längtar efter</p>
@@ -62,8 +64,8 @@
             <div class="hot-offers">
             <div class="offer-span-one">
                 <h2>Lunchbuffé</h2>
-                <p>Mån-fre ca 11:00-14:30 </p>
-                <p>(OBS! Vi har stängt på tisdagar)</p>
+                <strong><p>Mån-fre ca 11:00-14:30 </p>
+                <p>(OBS! Vi har stängt på tisdagar)</p></strong>
                 <br>
                <p>Servering 99:-</p>
                <p>Avhämtning 89:-</p>
@@ -71,10 +73,12 @@
             </div>
             <div class="offer-span-two">
                     <h2>Helgbuffé</h2>
-                    <p>Fredag ca 16:00-19:30</p>
+                    <strong>
+                        <p>Fredag ca 16:00-19:30</p>
+                        <p>Lördag & söndag ca 12:00-19:30</p>
+                    </strong>
                     <br>
-                    <p>Lördag & söndag ca 12:00-19:30</p>
-                    <p>Servering & Avhämtning 149:-</p>
+                        <p>Servering & Avhämtning 149:-</p>
                 </div>         
     </div>
     <div class="menu-button-parent">
@@ -83,14 +87,15 @@
     
 </main>
 <div class="phone-number">
-    <h1>Ring och beställ&nbsp;<a href="tel:040188414">040-18 84 14</a>
-    </h1>
+    <h1>Ring och beställ</h1
+    ><a href="tel:040188414">040-18 84 14</a>
+  
 </div>
 
 <section class="homepage-contact-info">
         <div class="google-maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.7115466071314!2d13.018926815510996!3d55.60703371069301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3e725cde32d%3A0xd93978476b2d50fe!2sDrottninggatan+4A%2C+212+11+Malm%C3%B6!5e0!3m2!1sen!2sse!4v1445716516761"
-                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                width="100%" height="450" frameborder="0" style="border:0"></iframe>
             </div>
     <div class="open-hours">
             <table style="width:100%">
@@ -135,18 +140,21 @@
 
 </section>
     <!-- Footer-->
-    <footer id="footer">      
+    <footer id="footer">    
+        <div class="social-media">
+            <h3>Följ oss i sociala medier</h3>
+         </div>
+            <a href="https://www.facebook.com/restaurangkina/" class="fab fa-facebook-f"></a>
         <div class="footer-contact">
             <div class="footer-contact-wrapper">
-                <h2>Hitta hit</h2>
+                <h3>Hitta hit</h3>
                 <a href="tel:040188414"><i class="fas fa-phone"></i> 040-18 84 14</a>
                 <a href="https://www.google.com/maps/search/?api=1&query=drottninggatan+4a+malmö" target="_blank"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Drottninggatan 4A, 212 31 Malmö</a>
             </div>
         </div>
         <div class="copyright">
         <p>&#169; 2018 All Rights Reserved </p>
-        <p>Site By: David Yan</p>
-        <a href="https://www.facebook.com/restaurangkina/" class="fab fa-facebook-f"></a>
+        <p>Site by: David Yan</p>
     </div>
     </footer>
 </section>
