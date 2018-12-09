@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     $(".page-content-big-text").hide()
-    $("small-text").hide()
+    $(".small-text").hide()
 
     $(".page-content-bg").ready(function() {
       $(".page-content-big-text").delay(500).fadeIn(2000)
@@ -55,8 +55,8 @@ $(function(){
           $('#smaller').css("font-size", "2em");
           $('#smaller-text').css("font-size", "1em");
       } else {
-        $('#smaller').css("font-size", "4em");
-        $('#smaller-text').css("font-size", "1.8em");
+        $('#smaller').css("font-size", "3.5em");
+        $('#smaller-text').css("font-size", "1.6em");
       }
   });
 });
