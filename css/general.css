@@ -37,7 +37,7 @@ flex-direction: column;
 .page-content-big-text{
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 500;
     color: white;
     transition: all .5s linear;
@@ -46,9 +46,8 @@ flex-direction: column;
 
 
 .small-text{
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 100;
-   display: none;
     color: white;
     text-transform: lowercase;
     margin-top: 0.5em;
