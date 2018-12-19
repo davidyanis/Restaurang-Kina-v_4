@@ -1,27 +1,38 @@
 /* Everything over 768 px */
 @media screen and (min-width: 768px) {
     .wrap-everything{
-        width: 80%;
-        margin-left: 20%;
+        width: 85%;
+        margin-left: 15%;
     }
-
 
     .page-content-bg{
         height: 100vh;
     }
 
-    .title{
-        font-size: 1.7em;
-        text-decoration: none;
-        display: inline-block;
-        color: #A77A48;
-        font-family: 'Rancho', cursive;
-       font-weight: 100;
-        margin-top: 0;
-
-    }
     footer .footer-contact-wrapper a{
         text-decoration: none;
-       
     }
+
+    footer .footer-links{
+        display: none;
+    }
+
+    .buffe-includes {
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+     }
+     
+     .about-us-text{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 50%;
+        font-size: 1.2em;
+        padding: 1em;
+        color: #fff;
+     }
+
+     section .open-hours {
+         margin-top: 0;
+     }
+
 }

@@ -1,0 +1,44 @@
+/* Contact wrapper */
+
+.homepage-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.open-hours {
+    background: #fff;
+   flex-grow: 1;
+    font-size: 1.2em;
+    padding: 2em;
+    margin-top: 2em;
+   
+}
+
+.contact-info {
+   flex-grow: 1;
+   font-size: 1.2em;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(255, 255, 255, 0.8);
+   border-left: 1px solid #ddd;
+   padding: 2em;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 1em;
+}
+.google-maps {
+    flex-grow: 1;
+}
+
+.fa-at {
+    color: #cc0000;
+}
+
+.contact-background {
+    height: 15em;
+    background: linear-gradient( rgba(255, 196, 0, 0.4), rgba(255, 196, 0, 0.6) ), url("/../assets/lantern.jpeg");
+    background-size: cover;
+    background-position: center;
+}

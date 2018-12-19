@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2F4F3;
 }
 
 main {
@@ -10,13 +11,13 @@ main {
 
 /* Picture taking whole viewport  */
 .page-content-bg{
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9) ), url("/../assets/header-image.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1) ), url("/../assets/header-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 92vh;
-    color: #ddd;
+    color: #fff;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -25,39 +26,36 @@ main {
 }
 
 .page-content-text {
-line-height: 1.4em;
+    line-height: 2.4em;
 width: 100%;
 text-shadow: 2px 2px #000;
-font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
 display: flex;
 align-items: center;
 flex-direction: column;
 }
 
 .page-content-big-text{
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-size: 3.5em;
-    font-weight: 500;
-    color: white;
+    font-size: 3.2em;
+    color: #fff;
+   /* color: #6F2232; */
     transition: all .5s linear;
-
+    margin: 0;
 }
 
-
-.small-text{
-    font-size: 1.6em;
-    font-weight: 100;
-    color: white;
-    text-transform: lowercase;
-    margin-top: 0.5em;
+.page-content-text p {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
     transition: all .5s linear;
-}
+    }
+
+
 
 
 .fa-angle-down{
     text-decoration: none;
-    color: #ddd;
+    color: #fff;
     padding: 0.5em;
     width: 5em;
     text-align: center;
@@ -69,6 +67,7 @@ flex-direction: column;
 
 .fa-angle-down:hover{
    opacity: 0.2;
+   color: #D8B10B;
 }
 .bounce {
     display: flex;
@@ -78,7 +77,9 @@ flex-direction: column;
     animation: bounce 2s infinite;
 }
 
-
+main {
+background-color: #F2F4F3;
+}
 .hot-offers{
     height: 100%;
     display: flex;
@@ -88,58 +89,61 @@ flex-direction: column;
 
 .offer-span-one, .offer-span-two {
     height: 20em;
-margin-top: 1em;
     flex-grow: 1;
     display: flex;
     border: 1px solid #ddd;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     flex-direction: column;  
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0.5em;
 } 
 
 .offer-span-one h2, .offer-span-two h2 {
-    color: #cc0000;
     font-size: 2em;
-   
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 700;
+    font-style: italic;
 }
 .offer-span-one p, .offer-span-two p {
     font-size: 1.1em;
     margin: 0;
-   
+   color: #000;
 }
 
 .buffe-includes {
    margin: 1em;
-   text-align: center
-    
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-style: italic;
 }
 
 .erbjudanden {
+    color: #CB0000;
     line-height: 0.2em;
     text-align: center;
     font-size: 2.4em;
-    font-weight: 500;
-    font-family: 'Rancho', cursive;
-    color: #cc0000;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
   }
-
-  
   
 .menu-button-parent {
     text-align: center;
     margin-top: 3em;
 }
 .go-to-menu {
-    color: white;
-    background-color: #cc0000;
+    color: #fff;
+    background-color: #CB0000;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 0.5em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     text-align: center;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     -webkit-transition-duration: 1s;
        -moz-transition-duration: 1s;
          -o-transition-duration: 1s;
@@ -164,6 +168,10 @@ margin-top: 1em;
   .go-to-menu:hover span {
     padding-right: 25px;
   }
+
+  .go-to-menu:hover {
+    background-color: #D8B10B;
+  }
   
   .go-to-menu:hover span:after {
     opacity: 1;
@@ -171,95 +179,43 @@ margin-top: 1em;
   }
 
 
-/* Call to order */
-.phone-number{
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("/../assets/fire.jpg");
-    height: 15em;
-    background-size: cover;
-    background-attachment: fixed;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   margin-top: 5em; 
-  
-}
-.phone-number h1{
-    font-size: 2.4em;
-    font-weight: 500;
-    text-align: center;
-   margin: 0;
-    color: white;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
- 
-}
-.phone-number a {
-    color: #cc0000;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 2.4em;
-    text-align: center;
-   
-    
-}
-
-.phone-number a:hover {
-    opacity: 0.5;
-}
-
-
-
-/* Contact wrapper */
-
-.homepage-contact-info {
-    flex-wrap: wrap;
-    display: flex;
-}
-.open-hours {
-    background-color: #f2f2f2;
-    
-   width: 100%;
-   height: 23em;
-    font-size: 1.3em;
-    padding: 2em;
-
-   
-}
-.google-maps {
-    flex-grow: 1;
-}
 .about-us-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6) ), url("/../assets/aboutUs.jpg");
+    background: linear-gradient( rgba(255, 196, 0, 0.8), rgba(255, 196, 0, 0.8) ), url("/../assets/china.jpg");
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 5em;
 }
 .about-us-text{
-   background-color: rgba(255, 255, 255, 0.8);
-   width: 100%;
-   font-size: 1.2em;
-   text-align: center;
-   padding: 1em;
-  
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    width: 100%;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 0.4em;
+    padding-top: 1em;
 }
 .about-us-text h1{
-color: #cc0000;
+color: #CB0000;
 font-size: 2em;
 margin: 0;
+font-weight: 700;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
 }
 
 /* FOOTER */
 footer {
-    margin-top: 10em;
-    background-color: #1a1a1a;
-    color:#b3b3b3;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    color: #333;
     height: 70%;
     width: 100%;
     overflow: hidden;
-    
+    text-align: center;
 }
 .footer-contact {
     display: flex;
@@ -267,60 +223,67 @@ footer {
 }
 .footer-contact-wrapper{
     margin-top: 1em;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.3em;
    display: flex;
    flex-direction: column;
-    width: auto;
+    padding: 1em;
 
 }
 
 .footer-contact-wrapper a{
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #b3b3b3;
+    color: #333;
     margin-top: 1em;
+    text-decoration: none;
+}
+
+.footer-social-media {
+    text-align: center;
 }
 .copyright{
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
     width: 100%;
-    border-top: 1px solid #333;
-    background-color: #0d0d0d;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    color: #ddd;
    
 }
-.copyright p{
-    margin: 0;
-   
+
+.copyright a{
+    color: #D8B10B;
+    text-decoration: none;
 }
 footer .footer-links{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: 1em;
     justify-content: center;
     margin-top: 1em;
+    font-size: 1.2em;
+    border-top: 1px solid #ddd;
 }
 footer .footer-links li a{
-    color: #b3b3b3;
+    color: #000;
     line-height: 2em;
     text-decoration: none;
     padding-left: 1em;
 }
 footer .footer-links li a:hover{
-   color:  #cc0000;
+   color: #000;
    
 }
 .fa-map-marker-alt, .fa-phone{
-    color: #cc0000;
+    color: #CB0000;
     margin-right: 0.5em;
 }
+
+.fa-map-marker-alt:hover, .fa-phone:hover, .fa-at:hover{
+    color: #D8B10B;
+}
 .fa-facebook-f{
-    background-color: #cc0000;
+    background-color: #CB0000;
     color: white;
     padding: 1em;
    border-radius: 50%;
@@ -329,7 +292,7 @@ footer .footer-links li a:hover{
     list-style-type: none;
 }
 .fa-facebook-f:hover{
-    background-color: #cc0000;
+    background-color: #3B5998;
 }
 /* Bouncing arrow */
 @keyframes bounce {

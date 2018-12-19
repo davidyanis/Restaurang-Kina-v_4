@@ -20,34 +20,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Font familys-->
-    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
     <script src="js/script.js"></script>
     
 </head>
 
 <body>
     <section class="wrap-everything">
-    <header id="header">
-        <i id="corner-icon" class="fas fa-bars menu-button" onclick="menuButtonClicked()"> </i>  
-        
-        <h3 class="title"><a href="index.html">Restaurang Kina, Malmö</a></h3>
-        <a href="index.html"><img src="assets/favicon.png"></a>
-        <ul>
-            <li><a class="active" href="index.html">Välkommen</a></li>
-            <li><a href="#meny">Vår Meny</a></li>
-            <li><a href="#kontakt">Boka bord</a></li>
-            <li><a href="#kontakt">Kontakta oss</a></li>
-            <li><a href="#kontakt">Hemkörning</a></li>
-        </ul>
-    </header>
-
-
+            <header id="header">
+                <i id="corner-icon" class="fas fa-bars menu-button" onclick="menuButtonClicked()"> </i>  
+                
+                <h3 class="title"><a href="index.html">Restaurang Kina, Malmö</a></h3>
+                <a href="index.html"><img src="assets/favicon.png"></a>
+                <ul>
+                    <li><a class="active" href="index.html">Välkommen</a></li>
+                    <li><a href="#meny">Vår Meny</a></li>
+                    <li><a href="bookatable.html">Boka bord</a></li>
+                    <li><a href="contactus.html">Kontakta oss</a></li>
+                    <li><a href="#kontakt">Hemkörning</a></li>
+                </ul>
+            </header>
     <div class="page-content-bg">
         <div></div>
         <div class="page-content-text" id="page-content-text">
-            <h1 class="page-content-big-text" id="smaller">Maten</h1>
-            <p class="small-text" id="smaller-text">man längtar efter</p>
+            <h1 class="page-content-big-text" id="smaller">MATEN</h1>
+            <p class="small-text" id="smaller-text">som talar med dina smaklökar</p>
+           
         </div>
         <div class="arrow bounce">
                 <a onscroll="testScroll()" id="scroll" class="fas fa-angle-down fa-3x" href="#main"></a> 
@@ -57,15 +55,14 @@
 
 
 <main id="main">
-            <h1 class="erbjudanden"><span><i>ALL YOU CAN EAT</i></span></h1>
-            <p></p>
-            <p class="buffe-includes">Vår buffé består alltid av minst 12 varmrätter. Vi satsar på kvalité över kvantiten.
+            <h1 class="erbjudanden"><span>All You Can Eat</span></h1>
+            <p class="buffe-includes">Vår buffé består alltid av minst 12 varmrätter av hög kvalité.
             Det ingår även saft, vatten, och en fräsch salladsbuffé. Efter maten kan du avnjuta jasminte, kaffe och kakor </p>
             <div class="hot-offers">
             <div class="offer-span-one">
                 <h2>Lunchbuffé</h2>
-                <strong><p>Mån-fre ca 11:00-14:30 </p>
-                <p>(OBS! Vi har stängt på tisdagar)</p></strong>
+                <p>Mån-fre ca 11:00-14:30 </p>
+                <p>(OBS! Vi har stängt på tisdagar)</p>
                 <br>
                <p>Servering 99:-</p>
                <p>Avhämtning 89:-</p>
@@ -73,88 +70,48 @@
             </div>
             <div class="offer-span-two">
                     <h2>Helgbuffé</h2>
-                    <strong>
                         <p>Fredag ca 16:00-19:30</p>
                         <p>Lördag & söndag ca 12:00-19:30</p>
-                    </strong>
                     <br>
                         <p>Servering & Avhämtning 149:-</p>
                 </div>         
     </div>
     <div class="menu-button-parent">
-    <a href="#" class="go-to-menu"><span>Se vår meny</span></a>
+    <a href="#" class="go-to-menu"><span>Boka bord</span></a>
     </div>
     
 </main>
-<div class="phone-number">
-    <h1>Ring och beställ</h1
-    ><a href="tel:040188414">040-18 84 14</a>
-  
-</div>
 
-<section class="homepage-contact-info">
-        <div class="google-maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.7115466071314!2d13.018926815510996!3d55.60703371069301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3e725cde32d%3A0xd93978476b2d50fe!2sDrottninggatan+4A%2C+212+11+Malm%C3%B6!5e0!3m2!1sen!2sse!4v1445716516761"
-                width="100%" height="450" frameborder="0" style="border:0"></iframe>
-            </div>
-    <div class="open-hours">
-            <table style="width:100%">
-                <h1>Öppettider</h1>
-                    <tr>
-                      <td>Mån</td>
-                      <td>11.00-21.00</td>  
-                    </tr>
-                    <tr>
-                      <td>Tis</td>
-                      <td>STÄNGT</td>   
-                    </tr>
-                    <tr>
-                      <td>Ons & tors</td>
-                      <td>11.00-21.00</td>   
-                    </tr>
-                    <tr>
-                      <td>Fre</td>
-                      <td>11.00-21.30</td>   
-                    </tr>
-                    <tr>
-                      <td>Lör</td>
-                      <td>12.00-21.30</td>   
-                    </tr>
-                    <tr>
-                      <td>Sön</td>
-                      <td>12.00-21.00</td>   
-                    </tr>
-                  </table>
-       <h1>Adress & telefonnr</h1>
-       <p><i class="fas fa-map-marker-alt"></i> Drottninggatan 4A, 212 31 Malmö</p>
-       <p><i class="fas fa-phone"></i>040-18 84 14</p>
-    </div>
-   
-</section>
+
 <section class="about-us-container">
    
     <div class="about-us-text">
-        <h1>Om oss</h1>
-        <p>Vi är en välkänd kinesisk restaurang i Malmö som grundades 1974. Ur högtalarna spelas kinesisk musik i en lugn och mysig atmosfär. Vi erbjuder traditionell kinesisk mat med färska ingredienser. Med fullständiga rättigheter kan du avnjuta en måltid med dryck i vår restaurang. Vill du ta med maten har vi avhämtning samt hemleverans. Hos oss finner du även lunchbuffé och helgbuffé till bra priser. Varmt välkomna in!</p>
+        <h1>Restaurang Kina</h1>
+        <p>Vi är en välkänd kinesisk restaurang i Malmö som grundades 1974. Ur högtalarna spelas kinesisk musik i en lugn och mysig atmosfär. Vi erbjuder traditionell kinesisk mat med färska ingredienser. <br><br>Med fullständiga rättigheter kan du avnjuta en måltid med dryck i vår restaurang. Vill du ta med maten har vi avhämtning samt hemleverans. Hos oss finner du även lunchbuffé och helgbuffé till bra priser. Varmt välkomna in!</p>
     </div>
 
 </section>
     <!-- Footer-->
     <footer id="footer">    
-        <div class="social-media">
-            <h3>Följ oss i sociala medier</h3>
-         </div>
+        <div class="footer-social-media">
+            <h3>Följ oss på..</h3>
             <a href="https://www.facebook.com/restaurangkina/" class="fab fa-facebook-f"></a>
+        </div>
         <div class="footer-contact">
             <div class="footer-contact-wrapper">
-                <h3>Hitta hit</h3>
                 <a href="tel:040188414"><i class="fas fa-phone"></i> 040-18 84 14</a>
                 <a href="https://www.google.com/maps/search/?api=1&query=drottninggatan+4a+malmö" target="_blank"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Drottninggatan 4A, 212 31 Malmö</a>
             </div>
         </div>
+        <div class="footer-links">
+            <li><a href="#">Meny</a></li>
+            <li><a href="#">Boka bord</a></li>
+            <li><a href="#">Kontakta oss</a></li>
+            <li><a href="#">Hemkörning</a></li>
+        </div>
         <div class="copyright">
         <p>&#169; 2018 All Rights Reserved </p>
-        <p>Site by: David Yan</p>
+        <p>Site by: <a href="https://www.linkedin.com/in/david-yan97/" target="_blank">David Yan</a></p>
     </div>
     </footer>
 </section>

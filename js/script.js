@@ -8,6 +8,12 @@ $( document ).ready(function() {
     });
 });
 
+window.addEventListener('load', function () {
+    2
+      vanillacalendar.init();
+    3
+    })
+    
 function menuButtonClicked() {
     var header = document.getElementById("header");
     var cornerIcon = document.getElementById("corner-icon");
@@ -55,10 +61,16 @@ $(function(){
           $('#smaller').css("font-size", "2em");
           $('#smaller-text').css("font-size", "1em");
       } else {
-        $('#smaller').css("font-size", "3.5em");
-        $('#smaller-text').css("font-size", "1.6em");
+        $('#smaller').css("font-size", "3.2em");
+        $('#smaller-text').css("font-size", "1.5em");
       }
   });
+
+  $("#scroll").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#main").offset().top
+    }, 1000);
+});
 });
 
 
