@@ -15,15 +15,16 @@ header{
         margin-top: 2em;
         display: block;
         text-decoration: none;
-        color: #ddd;
+        color: #E8E8E8;
         font-size: 1.7em;
         white-space: nowrap;
         font-family: 'Montserrat', sans-serif;
+        transition: 0.3s;
     }
 
     
     header li a:hover{
-        color: #CB0000;
+        color: #e60033;
     }
 
     ul{
@@ -35,7 +36,7 @@ header{
     }
     
     .active{
-        color: #CB0000;
+        color: #e60033;
     }
     .title a{
         font-size: 1.2em;
@@ -71,11 +72,10 @@ header{
         header {
             width: 15%;
             height: 100vh;
-           position: fixed;
-           top:0px;
-           bottom:0px;
-           left:0px;   
-            
+            position: fixed;
+            top:0px;
+            bottom:0px;
+            left:0px;   
         }
 
         header img {

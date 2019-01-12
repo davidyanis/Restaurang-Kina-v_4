@@ -1,4 +1,5 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+    // Fade in text on page load
     $(".page-content-big-text").hide()
     $(".small-text").hide()
 
@@ -6,6 +7,21 @@ $( document ).ready(function() {
       $(".page-content-big-text").delay(500).fadeIn(2000)
       $(".small-text").delay(1200).fadeIn(2000)
     });
+
+    // Book table, date picker
+
+    $('#picker').dateTimePicker({
+        dateFormat: "YYYY-MM-DD HH:mm",
+        locale: 'sv',
+        showTime: true,
+        selectData: "now",
+        positionShift: { top: 20, left: 0},
+        title: "Välj datum och tid",
+        buttonTitle: "Klar"
+    });
+        
+
+
 });
 
 window.addEventListener('load', function () {
@@ -61,7 +77,7 @@ $(function(){
           $('#smaller').css("font-size", "2em");
           $('#smaller-text').css("font-size", "1em");
       } else {
-        $('#smaller').css("font-size", "3.2em");
+        $('#smaller').css("font-size", "3em");
         $('#smaller-text').css("font-size", "1.5em");
       }
   });

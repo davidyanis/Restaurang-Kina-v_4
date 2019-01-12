@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -11,20 +11,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- Css styles-->
-    <link href="calendar/vanillaCalendar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/datetimepicker.css" >
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/bookatable.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-   <!--  Jquery cdn links -->
+    <!--  Jquery cdn links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
     <!-- Font familys-->
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
     <script src="js/script.js"></script>
+    <script src="js/datetimepicker.js"></script>
     
 </head>
 
@@ -36,7 +37,6 @@
                 <h3 class="title"><a href="index.html">Restaurang Kina, Malmö</a></h3>
                 <a href="index.html"><img src="assets/favicon.png"></a>
                 <ul>
-                    <li><a href="index.html">Välkommen</a></li>
                     <li><a href="#meny">Vår Meny</a></li>
                     <li><a class="active" href="#kontakt">Boka bord</a></li>
                     <li><a href="contactus.html">Kontakta oss</a></li>
@@ -52,34 +52,27 @@
         <h3>Boka bord</h3>
         <h4>Vänligen fyll i formuläret.</h4>
         <fieldset>
-            <label>Förnamn *</label>
-          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+           
+          <input placeholder="Namn *" type="text" tabindex="1" required autofocus>
         </fieldset>
         <fieldset>
-                <label>E-post *</label>
-          <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          <input placeholder="E-post *" type="email" tabindex="3" required>
         </fieldset>
         <fieldset>
-                <label>Telefonnummer *</label>
-          <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+          <input placeholder="Telefonnummer *" type="text" tabindex="4" required>
         </fieldset>
         <fieldset>
-                <label>Datum *</label>
-          <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+            <div id="picker"></div>
+            <input type="hidden" id="result" value="" />
         </fieldset>
         <fieldset>
-                <label>Tid *</label>
-          <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+          <input placeholder="Antal personer *" type="text" tabindex="4" required>
         </fieldset>
         <fieldset>
-                <label>Antal personer *</label>
-          <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+          <textarea placeholder="Vid speciella önskemål eller allergier, meddela oss i förväg" tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
-          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Skicka</button>
         </fieldset>
        
       </form>
@@ -87,17 +80,17 @@
    </div>
    </div>
 </div>
-
-    <!-- Footer-->
-    <footer id="footer">    
+   
+      <!-- Footer-->
+      <footer id="footer">    
         <div class="footer-social-media">
             <h3>Följ oss på..</h3>
             <a href="https://www.facebook.com/restaurangkina/" class="fab fa-facebook-f"></a>
         </div>
         <div class="footer-contact">
             <div class="footer-contact-wrapper">
-                <a href="tel:040188414"><i class="fas fa-phone"></i> 040-18 84 14</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=drottninggatan+4a+malmö" target="_blank"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Drottninggatan 4A, 212 31 Malmö</a>
+                <a href="tel:040188414"><strong>Tel</strong> <br> 040-18 84 14</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=drottninggatan+4a+malmö" target="_blank"><strong>Adress</strong> <br> Restaurang Kina <br> Drottninggatan 4A, <br>212 31 Malmö</a>
             </div>
         </div>
         <div class="footer-links">
@@ -106,14 +99,12 @@
             <li><a href="#">Kontakta oss</a></li>
             <li><a href="#">Hemkörning</a></li>
         </div>
-        <div class="copyright">
-        <p>&#169; 2018 All Rights Reserved </p>
-        <p>Sida skapad av: <a href="https://www.linkedin.com/in/david-yan97/" target="_blank">David Yan</a></p>
-    </div>
     </footer>
+    <div class="copyright">
+        <p>&#169; 2018 All Rights Reserved </p>
+        <p>Webbsida av: <a href="https://www.linkedin.com/in/david-yan97/" target="_blank">David Yan</a></p>
+    </div>
 </section>
-
-<script src="calendar/vanillaCalendar.js"></script>
 </body>
 
 </html>

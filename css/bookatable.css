@@ -1,6 +1,6 @@
 .bookatable-background {
-        height: 20em;
-        background: linear-gradient( rgba(100, 30, 100, 0.4), rgba(0, 30, 100, 0.6) ), url("/../assets/fire.jpg");
+        height: 10em;
+        background: linear-gradient( rgba(187, 127, 15, 0.2), rgba(238, 72, 7, 0.591) ), url("/../assets/fire.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -30,7 +30,7 @@
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px 'Montserrat', sans-serif;
+  font: 400 16px/18px 'Montserrat', sans-serif;
 }
 
 #contact {

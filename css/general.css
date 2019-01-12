@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #F2F4F3;
+    /* background-color: #E8E8E8; */
 }
 
 main {
@@ -11,7 +11,7 @@ main {
 
 /* Picture taking whole viewport  */
 .page-content-bg{
-    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1) ), url("/../assets/header-image.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/../assets/header-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,14 +33,16 @@ font-family: 'Montserrat', sans-serif;
 display: flex;
 align-items: center;
 flex-direction: column;
+text-transform: uppercase;
 }
 
 .page-content-big-text{
-    font-size: 3.2em;
-    color: #fff;
+    font-size: 3em;
+    color: #e60033;
    /* color: #6F2232; */
     transition: all .5s linear;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .page-content-text p {
@@ -56,8 +58,6 @@ flex-direction: column;
 .fa-angle-down{
     text-decoration: none;
     color: #fff;
-    padding: 0.5em;
-    width: 5em;
     text-align: center;
     -webkit-transition: opacity 2s ease-in-out;
     -moz-transition: opacity 2s ease-in-out;
@@ -65,10 +65,7 @@ flex-direction: column;
     -o-transition: opacity 2s ease-in-out;
 }
 
-.fa-angle-down:hover{
-   opacity: 0.2;
-   color: #D8B10B;
-}
+
 .bounce {
     display: flex;
     justify-content: center;
@@ -78,7 +75,7 @@ flex-direction: column;
 }
 
 main {
-background-color: #F2F4F3;
+/* background-color: #E8E8E8; */
 }
 .hot-offers{
     height: 100%;
@@ -98,14 +95,15 @@ background-color: #F2F4F3;
     align-items: center;
     text-align: center;
     margin: 0.5em;
+  
 } 
 
 .offer-span-one h2, .offer-span-two h2 {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
-    color: #000;
     font-weight: 700;
     font-style: italic;
+    color: #e60033!important;
 }
 .offer-span-one p, .offer-span-two p {
     font-size: 1.1em;
@@ -118,10 +116,11 @@ background-color: #F2F4F3;
    text-align: center;
    font-family: 'Montserrat', sans-serif;
    font-style: italic;
+   width: 100%;
 }
 
 .erbjudanden {
-    color: #CB0000;
+    color: #e60033;
     line-height: 0.2em;
     text-align: center;
     font-size: 2.4em;
@@ -135,7 +134,7 @@ background-color: #F2F4F3;
 }
 .go-to-menu {
     color: #fff;
-    background-color: #CB0000;
+    background: #e60033;
     text-decoration: none;
     font-size: 1.4em;
     padding: 0.5em;
@@ -170,7 +169,7 @@ background-color: #F2F4F3;
   }
 
   .go-to-menu:hover {
-    background-color: #D8B10B;
+    background-color: rgb(218, 181, 60);
   }
   
   .go-to-menu:hover span:after {
@@ -178,28 +177,50 @@ background-color: #F2F4F3;
     right: 0;
   }
 
+  .news-and-call-container {
+      display: flex;
+      margin-top: 5em;
+      height: 30em;
+  }
+  .news {
+      height: 100%;
+      background: rgb(218, 181, 60);
+     padding-left: 3em;
+     padding-right: 3em;
+      width: 50%;
+      text-align: right;
+  }
+
+  .call-to-order {
+    width: 50%;
+    color: #e60033;
+    height: 100%;
+    font-size: 1.3em;
+    padding-left: 1em;
+  }
 
 .about-us-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( rgba(255, 196, 0, 0.8), rgba(255, 196, 0, 0.8) ), url("/../assets/china.jpg");
+    background: linear-gradient( rgba(20, 0, 0, 0.5), rgba(20, 0, 0, 0.7) ), url("/../assets/china.jpg");
     background-size: cover;
     background-attachment: fixed;
     padding-top: 2em;
     padding-bottom: 2em;
-    margin-top: 5em;
+    height: 25em;
+    
 }
 .about-us-text{
-    background-color: rgba(0, 0, 0, 0.7)!important;
+    background-color: rgba(238, 0, 44, 0.7)!important;
     width: 100%;
     font-size: 1.2em;
-    color: #fff;
+    color: #ddd!important;
     padding: 0.4em;
     padding-top: 1em;
 }
 .about-us-text h1{
-color: #CB0000;
+color: #fff;
 font-size: 2em;
 margin: 0;
 font-weight: 700;
@@ -209,51 +230,45 @@ font-family: 'Montserrat', sans-serif;
 
 /* FOOTER */
 footer {
-    background: #fff;
-    border-top: 1px solid #ddd;
+    padding: 1em;
+    background: rgb(218, 181, 60);
     color: #333;
-    height: 70%;
     width: 100%;
     overflow: hidden;
-    text-align: center;
-}
-.footer-contact {
     display: flex;
-    justify-content: center;
 }
+
 .footer-contact-wrapper{
-    margin-top: 1em;
     font-size: 1.3em;
-   display: flex;
-   flex-direction: column;
-    padding: 1em;
-
+    padding-left: 3em;
+    justify-content: space-between;
+    display: flex;
 }
 
+.footer-social-media {
+   margin-top: 0.2em;
+   
+   text-align: center;
+   
+}
 .footer-contact-wrapper a{
     color: #333;
     margin-top: 1em;
     text-decoration: none;
 }
 
-.footer-social-media {
-    text-align: center;
-}
 .copyright{
     font-size: 1em;
-    text-align: center;
-    width: 100%;
-    background-color: #000;
+    color: #333;
+    margin: 0!important;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ddd;
-   
+   justify-content: space-between;
+    margin-top: 1em;
+    background: rgb(218, 181, 60);
 }
 
 .copyright a{
-    color: #D8B10B;
-    text-decoration: none;
+    color: black;
 }
 footer .footer-links{
     display: flex;
@@ -275,15 +290,15 @@ footer .footer-links li a:hover{
    
 }
 .fa-map-marker-alt, .fa-phone{
-    color: #CB0000;
+    color: #e60033;
     margin-right: 0.5em;
 }
 
 .fa-map-marker-alt:hover, .fa-phone:hover, .fa-at:hover{
-    color: #D8B10B;
+    opacity: 0.5;
 }
 .fa-facebook-f{
-    background-color: #CB0000;
+    background-color: #e60033;
     color: white;
     padding: 1em;
    border-radius: 50%;
@@ -294,6 +309,27 @@ footer .footer-links li a:hover{
 .fa-facebook-f:hover{
     background-color: #3B5998;
 }
+
+.white-block {
+    background:#fff;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:rgb(211, 173, 49);
+    margin-top: 4em;
+  }
+
+  .skew-cc{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    margin-top: 4em;
+    background: linear-gradient(to right bottom, rgb(218, 181, 60) 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+  }
+  
+
+
+
 /* Bouncing arrow */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
